@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles_homepage.css">
+    <script>
+        function changeColorScheme(scheme) {
+            if (scheme === 'light') {
+                document.body.style.backgroundColor = '#ffffff'; 
+                document.body.style.color = '#000000'; 
+              
+            } else if (scheme === 'dark') {
+                document.body.style.backgroundColor = '#333333'; 
+                document.body.style.color = '#ffffff';
+               
+            }
+        }
+    </script>
+</head>
+<body background="background.png">
+    <header>
+        <h1>HI! I am Nitya!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Background.html">Background</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="Work Experience.html">Work Experience</a></li>
+            <li><a href="SignUp.html">Sign UP</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <img src="my img.jpg" alt="My Image" height="400" width="350">
+        </section>
+
+        <section>
+            <h2>A LITTLE ABOUT MY PRESENT......</h2>
+            <p>I am a second-year Computer Science student at Dalhousie University. I am passionate about becoming a cybersecurity analyst and currently looking to get a good co-op to boost my career. Along with academics, I try to stay connected to my university in many ways like joining clubs, being a course representative, playing intramurals, and many other things.</p>
+        </section>
+        <section>
+            <h2> Just my fav song..... pretty random ?!</h2>
+            <audio controls>
+                <source src="Rema, Selena Gomez - Calm Down (Lyrics).mp4" type="audio/mpeg">
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <a href="mailto:nt13393@dal.ca">Contact Me</a>
+        <div>
+            <button onclick="changeColorScheme('light')">Light Mode</button>
+            <button onclick="changeColorScheme('dark')">Dark Mode</button>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

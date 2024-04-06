@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles_signUp.css">
+  
+</head>
+<body background="background.png">
+    <header>
+        <h1>Sign Up To Join Me at Spatz!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Background.html">Background</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="Work Experience.html">Work Experience</a></li>
+            <li><a href="SignUp.html">Sign UP</a></li>
+        </ul>
+    </nav>
+
+    <main>
+       
+        <section>
+            <img src="SPATZ.jpg" alt="Spatz Image" height="400" width="350">
+        </section>
+
+        <section>
+            <h2>Fill the form</h2>
+            <form  method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required><br>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required><br>
+                
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="\(\d{3}\)-\d{3}-\d{4}" placeholder="(000)-000-0000" required>
+                <small>Format: (000)-000-0000</small><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com"required><br>
+
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" placeholder="B3J 3L8" required>
+                <small>Format: A1A 1A1</small><br>
+                
+                <button id = "submit">Send Info</button>
+            </form>
+            <div id="message-panel"></div>
+        </div>
+        <div id="notifications"></div>
+    
+            </section>
+            <section>
+                <div id="textChangeDiv">
+                    <h2>CLICK ME TO KNOW!! </h2>
+                    <button onclick="changeText()">Change Text</button>
+                </div>
+
+            </section>        
+    </main>
+
+    <footer>
+        <a href="mailto:nt13393@dal.ca">Contact Me</a>
+    </footer>
+    <script src="CHANGETEXT.JS"></script>
+</body>
+</html>
